@@ -19,7 +19,10 @@
     "react-parallax": "^3.5.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^7.1.1",
+<<<<<<< HEAD
     "react-simple-captcha": "^9.3.1",
+=======
+>>>>>>> e7fa2ffff5b108acfef3072f4aae787d4d405269
     "react-tabs": "^6.1.0",
     "sort-by": "^1.2.0",
     "swiper": "^11.1.15"
