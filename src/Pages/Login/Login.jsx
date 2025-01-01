@@ -75,4 +75,4 @@ const Login = () => {
     );
 };
 
-export default Login hello;
+export default Login;
