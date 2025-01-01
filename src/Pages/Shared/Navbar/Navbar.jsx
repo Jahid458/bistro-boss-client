@@ -1,16 +1,13 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
 
     const navOptions = <>
-    
-             <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+          
+             <li><Link to="/">Home</Link></li>
+             <li><Link to="/menu">Our Menu</Link></li>
+             <li><Link to="/order/salad">Order Food</Link></li>
+         
     </>
   return (
     <>
@@ -26,7 +23,6 @@ const Navbar = () => {
                 stroke="currentColor"
               >
                 <path
-                  strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
