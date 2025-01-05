@@ -48,7 +48,7 @@ import Cart from "../Pages/Dashboard/cart/cart";
     },
     {
       path: "dashboard",
-      element: <Dashboard></Dashboard>,
+      element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
       children:[
         {
           path:'cart',
