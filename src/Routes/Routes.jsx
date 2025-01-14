@@ -10,12 +10,13 @@ import Signup from "../Pages/SignUp/Signup";
 import PrivateRoute from "./PrivateRoute";
 import Secret from "../Pages/Shared/secret/secret";
 import Dashboard from "../Layout/Dashboard";
-import Cart from "../Pages/Dashboard/cart/cart";
 import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
 import AddItems from "../Pages/Dashboard/AddItems/AddItems";
 import AdminRoute from "./AdminRoute";
 import ManageItems from "../Pages/Dashboard/ManageItems/ManageItems";
 import UpdateItem from "../Pages/Dashboard/UpdateItem/UpdateItem";
+import Cart from "../Pages/Dashboard/Cart/Cart";
+import Payment from "../Pages/Dashboard/Payment/Payment";
 
 
  export const router = createBrowserRouter([
@@ -60,6 +61,11 @@ import UpdateItem from "../Pages/Dashboard/UpdateItem/UpdateItem";
           path:'cart',
           element: <Cart></Cart>
         },
+        {
+          path: 'payment',
+          element: <Payment></Payment>
+        },
+     
         //admin only routes
         {
           path: 'addItems',

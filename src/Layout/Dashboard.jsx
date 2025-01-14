@@ -34,6 +34,12 @@ const Dashboard = () => {
                     </NavLink>  
                 </li>
                 <li>
+                    <NavLink to="/dashboard/cart"> 
+                    <FaShoppingCart></FaShoppingCart>
+                    My Cart ({cart.length})
+                    </NavLink>  
+                </li>
+                <li>
                     <NavLink to="/dashboard/bookings"> 
                     <FaBook></FaBook>
                     Manage Bookings 
