@@ -13,16 +13,10 @@ import AddItems from "../Pages/Dashboard/AddItems/AddItems";
 import AdminRoute from "./AdminRoute";
 import ManageItems from "../Pages/Dashboard/ManageItems/ManageItems";
 import UpdateItem from "../Pages/Dashboard/UpdateItem/UpdateItem";
-<<<<<<< HEAD
 import Payment from "../Pages/Dashboard/Payment/Payment";
 import UserHome from "../Pages/Dashboard/UserHome/UserHome"
-=======
-import Cart from "../Pages/Dashboard/Cart/Cart";
-import Payment from "../Pages/Dashboard/Payment/Payment";
-import PaymentHistory from "../Pages/Dashboard/PaymentHistory/PaymentHistory";
-import UserHome from "../Pages/Dashboard/UserHome/UserHome";
->>>>>>> 3f4b9240728b220fd1f3482ef42d082e0cf1aa25
 import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
+import Cart from "../Pages/Dashboard/Cart/Cart";
 
 
  export const router = createBrowserRouter([
@@ -67,33 +61,17 @@ import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
       children:[
         //normal user routes
         {
-<<<<<<< HEAD
           path: 'userHome',
           element: <UserHome></UserHome>
-=======
-          path:'userHome',
-          element: <UserHome/>
->>>>>>> 3f4b9240728b220fd1f3482ef42d082e0cf1aa25
         },
         {
           path:'cart',
           element: <Cart></Cart>
         },
         {
-<<<<<<< HEAD
           path:'payment',
           element: <Payment></Payment>
         },
-=======
-          path: 'payment',
-          element: <Payment></Payment>
-        },
-        {
-          path: 'paymentHistory',
-          element: <PaymentHistory></PaymentHistory>
-        },
-     
->>>>>>> 3f4b9240728b220fd1f3482ef42d082e0cf1aa25
         //admin only routes
 
         {
