@@ -6,9 +6,15 @@ import useCart from "../../../hooks/useCart";
 import useAdmin from "../../../hooks/useAdmin";
 
 const Navbar = () => {
+<<<<<<< HEAD
   const { user, logOut } = useContext(AuthContext);
   const [isAdmin] = useAdmin();
 
+=======
+    const {user,logOut} = useContext(AuthContext);
+    const [isAdmin] = useAdmin();
+  
+>>>>>>> 3f4b9240728b220fd1f3482ef42d082e0cf1aa25
   const [cart] = useCart();
   const handleLogout = () => {
     logOut()
@@ -16,6 +22,7 @@ const Navbar = () => {
       .catch((error) => console.log(error));
   };
 
+<<<<<<< HEAD
   const navOptions = (
     <>
       <li>
@@ -45,6 +52,31 @@ const Navbar = () => {
           </button>
         </Link>
       </li>
+=======
+    const navOptions = <>
+          
+             <li><Link to="/">Home</Link></li>
+             <li><Link to="/menu">Our Menu</Link></li>
+             <li><Link to="/order/salad">Order Food</Link></li>
+             {
+              //  user ? 'true' : 'false' 
+              //  user ? condition ? 'double True': 'One True' : 'false' 
+             }
+             {
+
+              user && isAdmin &&  <li><Link to="/dashboard/adminHome">Dashboard</Link></li>
+             }
+             {
+
+              user && !isAdmin &&  <li><Link to="/dashboard/userHome">Dashboard</Link></li>
+             }
+             <li><Link to="/dashboard/cart">
+                <button className="btn">
+                       <FaShoppingCart className="mr-2"></FaShoppingCart>
+               <div className="badge badge-secondary">+{cart?.length}</div>
+              </button>
+             </Link></li>
+>>>>>>> 3f4b9240728b220fd1f3482ef42d082e0cf1aa25
 
       {user ? (
         <>

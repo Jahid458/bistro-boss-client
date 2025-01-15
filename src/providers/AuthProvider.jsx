@@ -50,15 +50,20 @@ const AuthProvider = ({children}) => {
                 .then(res => {
                     if(res.data.token){
                         localStorage.setItem('access-token', res.data.token);
+<<<<<<< HEAD
                         setLoading(false);
+=======
+                        setLoading(false)
+>>>>>>> 3f4b9240728b220fd1f3482ef42d082e0cf1aa25
                     }
                 })
 
             }else{
                 //TODO: remove token (if token in store client side: Local storage caching in memory)
-                 localStorage.removeItem('access-token')   
+                 localStorage.removeItem('access-token')  
+                 setLoading(false) 
             }
-            setLoading(false)
+           
         })
 
         return () =>{

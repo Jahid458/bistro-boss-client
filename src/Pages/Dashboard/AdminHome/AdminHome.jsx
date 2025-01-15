@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import useAuth from "./../../../hooks/useAuth";
 import { useQuery } from "@tanstack/react-query";
@@ -77,3 +78,25 @@ const AdminHome = () => {
 };
 
 export default AdminHome;
+=======
+import React from 'react';
+import useAuth from './../../../hooks/useAuth';
+
+
+const AdminHome = () => {
+    const {user} = useAuth();
+
+    return (
+        <div>
+            <h2 className="text-3xl">
+                    <span>Hi ,Welcome </span>
+                    {
+                        user?.displayName ?  user?.displayName : 'Back'
+                    }
+            </h2>
+        </div>
+    );
+};
+
+export default AdminHome;
+>>>>>>> 3f4b9240728b220fd1f3482ef42d082e0cf1aa25

@@ -45,11 +45,19 @@ const Cart = () => {
       <div className="flex justify-evenly mb-8">
         <h2 className="text-4xl">Items: {cart.length}</h2>
         <h2 className="text-4xl">Total Price: {totalPrice}</h2>
+<<<<<<< HEAD
         {cart.length ? <Link to="/dashboard/payment">
                     <button className="btn btn-primary">Pay</button>
                 </Link>:
                 <button disabled className="btn btn-primary">Pay</button>
                 }
+=======
+       {
+        cart.length ?<Link to="/dashboard/payment">
+          <button  className="btn  btn-primary">Pay</button></Link> 
+        : <button disabled  className="btn  btn-primary">Pay</button> 
+       }
+>>>>>>> 3f4b9240728b220fd1f3482ef42d082e0cf1aa25
       </div>
 
       <div className="overflow-x-auto ">
@@ -66,7 +74,7 @@ const Cart = () => {
           </thead>
           <tbody>
             {
-                cart.map( (item,index) =>   <tr key={item._id}>
+                cart.map( (item,index) => <tr key={item._id}>
                     <th>{index+1}</th>
                     <td>
                       <div className="flex items-center gap-3">
