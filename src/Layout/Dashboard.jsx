@@ -27,6 +27,14 @@ const Dashboard = () => {
                     Add Items
                     </NavLink>  
                 </li>
+
+                <li>
+                    <NavLink to="/dashboard/cart"> 
+                    <FaShoppingCart></FaShoppingCart>
+                    My Cart ({cart.length})
+                    </NavLink>  
+                </li>
+                
                 <li>
                     <NavLink to="/dashboard/manageItems"> 
                     <FaList></FaList>

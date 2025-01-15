@@ -1,6 +1,4 @@
-import {
-    createBrowserRouter
-  } from "react-router-dom";
+import {createBrowserRouter} from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Menu from "../Pages/Menu/Menu/Menu";
@@ -16,6 +14,9 @@ import AddItems from "../Pages/Dashboard/AddItems/AddItems";
 import AdminRoute from "./AdminRoute";
 import ManageItems from "../Pages/Dashboard/ManageItems/ManageItems";
 import UpdateItem from "../Pages/Dashboard/UpdateItem/UpdateItem";
+import Payment from "../Pages/Dashboard/Payment/Payment";
+import UserHome from "../Pages/Dashboard/UserHome/UserHome"
+import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
 
 
  export const router = createBrowserRouter([
@@ -23,6 +24,9 @@ import UpdateItem from "../Pages/Dashboard/UpdateItem/UpdateItem";
       path: "/",
       element: <Main></Main>,
       children:[
+      
+
+      
         {
             path:'/',
             element:<Home/>
@@ -57,10 +61,23 @@ import UpdateItem from "../Pages/Dashboard/UpdateItem/UpdateItem";
       children:[
         //normal user routes
         {
+          path: 'userHome',
+          element: <UserHome></UserHome>
+        },
+        {
           path:'cart',
           element: <Cart></Cart>
         },
+        {
+          path:'payment',
+          element: <Payment></Payment>
+        },
         //admin only routes
+
+        {
+          path: 'adminHome',
+          element: <AdminRoute><AdminHome></AdminHome></AdminRoute>
+        },
         {
           path: 'addItems',
           element:<AdminRoute><AddItems></AddItems></AdminRoute>
